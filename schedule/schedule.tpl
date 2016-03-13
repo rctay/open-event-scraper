@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="../fossasia.ico" type="image/x-icon" />
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
 
     <link rel="stylesheet" href="../css/schedule.css">
 
@@ -122,10 +123,10 @@
 		      <span class="session-speaker-bio">{{biography}}</span>
 		    </p>
 		    <p class="session-speaker-social">
-		      {{#if web}}<a class="session-speaker-web" href="{{{web}}}"}>Home page</a>{{/if}}
-		      {{#if github}}<a class="session-speaker-github" href="{{{github}}}"}>Github</a>{{/if}}
-		      {{#if twitter}}<a class="session-speaker-twitter" href="{{{twitter}}}"}>Twitter</a>{{/if}}
-		      {{#if linkedin}}<a class="session-speaker-linkedin" href="{{{linkedin}}}"}>Linkedin</a>{{/if}}
+		      {{#if web}}<a class="session-speaker-web" href="{{{web}}}"}><i class="fa fa-home"></i></a>{{/if}}
+		      {{#if github}}<a class="session-speaker-github" href="{{{github}}}"}><i class="fa fa-github"></i></a>{{/if}}
+		      {{#if twitter}}<a class="session-speaker-twitter" href="{{{twitter}}}"}><i class="fa fa-twitter"></i></a>{{/if}}
+		      {{#if linkedin}}<a class="session-speaker-linkedin" href="{{{linkedin}}}"}><i class="fa fa-linkedin"></i></a>{{/if}}
 		    </p>
 		  </li>
                   {{/speakers_list}}
