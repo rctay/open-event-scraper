@@ -115,6 +115,21 @@
                 <p>
                   <span class="session-description">{{description}}</span>
                 </p>
+                <ul class="session-speakers-list">
+                  {{#speakers_list}}
+                  <li class="session-speakers">
+		    <p>
+		      <span class="session-speaker-bio">{{biography}}</span>
+		    </p>
+		    <p class="session-speaker-social">
+		      {{#if web}}<a class="session-speaker-web" href="{{{web}}}"}>Home page</a>{{/if}}
+		      {{#if github}}<a class="session-speaker-github" href="{{{github}}}"}>Github</a>{{/if}}
+		      {{#if twitter}}<a class="session-speaker-twitter" href="{{{twitter}}}"}>Twitter</a>{{/if}}
+		      {{#if linkedin}}<a class="session-speaker-linkedin" href="{{{linkedin}}}"}>Linkedin</a>{{/if}}
+		    </p>
+		  </li>
+                  {{/speakers_list}}
+                </ul>
               </div>
 
             </div><!-- /.row -->
